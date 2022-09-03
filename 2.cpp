@@ -21,8 +21,7 @@ class Grandchild:public Child1,Child2
     public:
         int getData () 
         {
-            Parent obj;
-            int* ptr = (int*)(&obj); //or reinterpret_cast
+            int* ptr = (int*)(this); //or reinterpret_cast
             return *ptr;
         }
 };

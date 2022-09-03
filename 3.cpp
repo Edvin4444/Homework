@@ -11,9 +11,8 @@ private:
     int topSecretValue;
 };
 
-class newSomething 
-{
-    public:
+class newSomething
+{    public:
         int getTopSvalue () const
         {
             return topSecretValue;
